@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samsung.mno.t_mobile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".MyTMobileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".iqtoggle.ui.IQToggleActivity"
+            android:label="@string/title_activity_iqtoggle"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".DataCollectionInitializer"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

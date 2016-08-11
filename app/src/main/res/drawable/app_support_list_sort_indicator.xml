@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_checked="true" android:drawable="@drawable/app_support_list_sort_sel" />
+    <item android:state_window_focused="false" android:state_checked="false" android:drawable="@color/app_background_white" />
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/app_support_list_sort_sel" />
+    <item android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/app_support_list_sort_sel" />
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/app_support_list_sort_sel" />
+    <item android:state_focused="true" android:state_checked="false" android:drawable="@color/medium_grey" />
+    <item android:state_checked="false" android:drawable="@color/app_background_white" />
+    <item android:state_checked="true" android:drawable="@drawable/app_support_list_sort_sel" />
+</selector>

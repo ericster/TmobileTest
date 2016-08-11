@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="@dimen/rounded_button_stroke_width" android:color="@color/white" />
+            <solid android:color="@color/brand_magenta" />
+            <padding android:left="@dimen/rounded_button_side_padding" android:top="@dimen/rounded_button_vertical_padding" android:right="@dimen/rounded_button_side_padding" android:bottom="@dimen/rounded_button_vertical_padding" />
+            <corners android:radius="@dimen/rounded_button_radius" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:width="@dimen/rounded_button_stroke_width" android:color="@color/white" />
+            <solid android:color="@color/white" />
+            <padding android:left="@dimen/rounded_button_side_padding" android:top="@dimen/rounded_button_vertical_padding" android:right="@dimen/rounded_button_side_padding" android:bottom="@dimen/rounded_button_vertical_padding" />
+            <corners android:radius="@dimen/rounded_button_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/brand_magenta" />
+            <padding android:left="@dimen/rounded_button_side_padding" android:top="@dimen/rounded_button_vertical_padding" android:right="@dimen/rounded_button_side_padding" android:bottom="@dimen/rounded_button_vertical_padding" />
+            <corners android:radius="@dimen/rounded_button_radius" />
+        </shape>
+    </item>
+</selector>

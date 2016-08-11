@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/brand_magenta" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/text_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/diagnostics_description_title" android:layout_alignParentTop="true" style="@style/text.header_new" />
+    <ScrollView android:id="@+id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/page_indicator_layout" android:layout_below="@id/text_header" android:layout_centerHorizontal="true"
+        android:fillViewport="false"
+        android:touchscreenBlocksFocus="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@+id/option_description" android:layout_width="wrap_content" android:text="@string/diagnostics_description" style="@style/text.description_new" />
+            <CheckBox android:id="@+id/agree_checkbox" android:paddingLeft="@dimen/horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding" android:checked="false" android:button="@drawable/tc_checkbox" android:text="@string/agree" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/page_indicator_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_marginBottom" android:layout_above="@+id/buttons_layout">
+        <ImageView android:id="@+id/page_indicator_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/page_indicator_divider" android:src="@drawable/ic_page_indicator_white" />
+        <ImageView android:id="@+id/page_indicator_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/page_indicator_divider" android:src="@drawable/ic_page_indicator_dark_magenta" />
+        <ImageView android:id="@+id/page_indicator_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_page_indicator_dark_magenta" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/more_info_button">
+        <Button android:id="@+id/decline_button" android:layout_width="wrap_content"
+            android:text="@string/decline_btn" android:layout_weight="1.0" style="@style/button_new.decline"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/apptentive_dialog_button_text" />
+        <Button android:id="@+id/next_button" android:layout_width="wrap_content" android:layout_marginBottom="@dimen/button_vertical_margin" android:text="@string/next_btn" android:layout_weight="1.0" style="@style/button_new.next"
+            android:layout_height="match_parent"
+            android:allowUndo="true"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/apptentive_dialog_button_text" />
+    </LinearLayout>
+    <Button android:id="@+id/more_info_button" android:text="@string/more_info_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/button_new.more_info"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+</RelativeLayout>

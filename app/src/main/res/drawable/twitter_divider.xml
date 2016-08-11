@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/divider_tab_twitter_grey_light_inset_left" android:insetRight="@dimen/divider_tab_twitter_grey_light_inset_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <size android:height="@dimen/divider_tab_twitter_grey_light_size" android:width="@dimen/divider_tab_twitter_grey_light_size" />
+        <solid android:color="@color/gray_scale_4" />
+    </shape>
+</inset>

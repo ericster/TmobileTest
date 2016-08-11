@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:padding="@dimen/feedback_survey_dialog_button_padding" android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/brand_magenta" />
+            <corners android:radius="@dimen/feedback_survey_dialog_button_radius" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:padding="@dimen/feedback_survey_dialog_button_padding" android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/brand_magenta" />
+            <corners android:radius="@dimen/feedback_survey_dialog_button_radius" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:padding="@dimen/feedback_survey_dialog_button_padding" android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/brand_magenta" />
+            <corners android:radius="@dimen/feedback_survey_dialog_button_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:padding="@dimen/feedback_survey_dialog_button_padding" android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/brand_magenta" />
+            <corners android:radius="@dimen/feedback_survey_dialog_button_radius" />
+        </shape>
+    </item>
+</selector>

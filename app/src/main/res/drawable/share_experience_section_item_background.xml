@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/share_your_experience_section_background_negative_inset" android:insetRight="@dimen/share_your_experience_section_background_negative_inset" android:insetTop="@dimen/share_your_experience_section_background_negative_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="@android:color/white" />
+        <stroke android:width="@dimen/share_your_experience_section_background_positive_inset" android:color="@color/gray_scale_4" />
+    </shape>
+</inset>
