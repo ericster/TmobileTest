@@ -2,6 +2,7 @@ package com.samsung.mno.t_mobile.iqtoggle.ui;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Path;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,7 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.samsung.mno.t_mobile.MyTMobileActivity;
 import com.samsung.mno.t_mobile.R;
 import com.samsung.mno.t_mobile.iqtoggle.model.OptionsType;
 
@@ -44,9 +46,10 @@ public abstract class OptionFragment extends Fragment implements View.OnClickLis
 
     private OnFragmentInteractionListener mListener;
     private Button moreButton;
-    private Button nextButton;
+    public Button nextButton;
     public Button declineButton;
     public CheckBox checkbox;
+    private View fragmentview;
 
     public OptionFragment() {
         // Required empty public constructor
@@ -153,8 +156,13 @@ public abstract class OptionFragment extends Fragment implements View.OnClickLis
     }
 
     public final void displayNextPage() {
-        IQToggleActivity iQToggleActivity = (IQToggleActivity)getActivity();
-        iQToggleActivity.nextFragment(currentPage());
+        String nextButtonString = nextButton.getText().toString();
+        if ((currentPage() == OptionsType.DIAGNOSTICS) && (nextButtonString.equals(getString(R.string.close_btn))))  {
+                startActivity(new Intent( getActivity(), MyTMobileActivity.class));
+        }else {
+            IQToggleActivity iQToggleActivity = (IQToggleActivity) getActivity();
+            iQToggleActivity.nextFragment(currentPage());
+        }
     }
 
     public abstract OptionsType currentPage();

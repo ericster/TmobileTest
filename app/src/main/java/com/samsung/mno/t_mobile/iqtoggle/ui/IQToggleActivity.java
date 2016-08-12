@@ -56,7 +56,6 @@ public class IQToggleActivity extends AppCompatActivity {
         super.onStart();
         //OptionsType optionType = this.optionType;
         OptionsType optionType = OptionsType.DIAGNOSTICS;
-
         displayEULA(optionType);
 
     }
