@@ -66,7 +66,8 @@ public class IQToggleActivity extends AppCompatActivity {
         if (optionType == null){
             sendBroadcast(new Intent("com.samsung.mno.t_mobile.iqtoggle.ui.ACTION_IQTOGGLE_FINISHED"));
             Toast.makeText(getApplicationContext(), "EULA pages are finished", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(this, MyTMobileActivity.class));
+            //startActivity(new Intent(this, MyTMobileActivity.class));
+            finish();
             return;
         }
         switch (optionType) {
