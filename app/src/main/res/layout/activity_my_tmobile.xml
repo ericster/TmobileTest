@@ -20,7 +20,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="194dp">
+        android:layout_marginBottom="194dp"
+        android:weightSum="1">
 
         <Button
             android:layout_width="wrap_content"
@@ -29,7 +30,15 @@
             android:id="@+id/iqtoggle"
             android:layout_gravity="center_vertical"
             android:singleLine="true"
-            />
+            android:layout_weight="0.43" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maps"
+            android:id="@+id/maps"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.65" />
     </LinearLayout>
 
 </RelativeLayout>

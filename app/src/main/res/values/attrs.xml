@@ -125,20 +125,8 @@
     <attr name="textColor" format="integer" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="dividerPadding" format="dimension" />
-    <attr name="imageAspectRatioAdjust">
-        <enum name="none" value="0" />
-        <enum name="adjust_height" value="2" />
-        <enum name="adjust_width" value="1" />
-    </attr>
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />
-    <attr name="mapType">
-        <enum name="normal" value="1" />
-        <enum name="none" value="0" />
-        <enum name="hybrid" value="4" />
-        <enum name="satellite" value="2" />
-        <enum name="terrain" value="3" />
-    </attr>
     <attr name="cameraBearing" format="float" />
     <attr name="cameraTargetLat" format="float" />
     <attr name="cameraTargetLng" format="float" />
@@ -189,16 +177,6 @@
     <attr name="suggestionRowLayout" format="reference" />
     <attr name="queryBackground" format="reference" />
     <attr name="submitBackground" format="reference" />
-    <attr name="buttonSize" format="reference">
-        <enum name="icon_only" value="2" />
-        <enum name="standard" value="0" />
-        <enum name="wide" value="1" />
-    </attr>
-    <attr name="colorScheme" format="reference">
-        <enum name="auto" value="2" />
-        <enum name="dark" value="0" />
-        <enum name="light" value="1" />
-    </attr>
     <attr name="scopeUris" format="reference|string" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="stickyListHeadersListViewStyle" format="reference" />
